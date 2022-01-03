@@ -1,0 +1,18 @@
+<?php
+$cars = array (
+  array("Volvo",22,18,4),
+  array("BMW",15,13),
+  array("Saab",5,),
+  array("Land Rover",17,15,4)
+);
+$count_array =  count($cars);
+for ($i=0; $i <$count_array; $i++) {
+  $count_value = count($cars[$i]);
+  echo "<p> Row Number .$i </p>";
+  echo "<ul>";
+  for ($x=0; $x < $count_value; $x++) {
+    echo "<li>" .$cars[$i][$x]. "</li>";
+  }
+ echo "</ul>";
+
+}
