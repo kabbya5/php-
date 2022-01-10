@@ -16,3 +16,7 @@
 json_encode($student); 
 
 //json_decode($jsonData , true);Array ( [fname] => jamal [lname] => Ahamend [age] => 6 [class] => 8 [section] => B )
+
+array_slice($array, 4, 5, true) //$take 4 to next 5 data form array.
+array_splice($array, 0, 3,$array2)//replace data.
+array_merge($array1 + $array2)// merge two array/ or (array1 + Array2)//but same key donot merge.
