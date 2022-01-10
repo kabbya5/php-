@@ -1,0 +1,17 @@
+$flower = array(
+  'Plumeria',
+  'Passionflower',
+  'Rose',
+  'Marigold',
+  'Sunflower',
+  'Jasmin',
+);
+$newflower1 = array_slice($flower, 2, 3);
+print_r($newflower1);
+echo "<br>";
+$newflower2 = array_slice($flower,3, 3,);
+print_r($newflower2);
+echo "<br>";
+$newMerge = array_merge($newflower1,$newflower2);
+print_r($newMerge);
+echo "<br>";
