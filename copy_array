@@ -1,0 +1,20 @@
+$person = array(
+  'fname' => 'rasel',
+  'lname' => 'khan',
+);
+// copy by value deep copy
+
+$newperson = $person;
+$newperson['lname'] ="nothing ";
+print_r($person);
+echo "<br>";
+print_r($newperson);
+echo "<br>";
+// copy by reference  shallow copy
+$person1 = $person;
+function shallowCopy($person){
+  $person['fname'] = 'change';
+  print_r($person);
+}
+shallowCopy($person);
+print_r($person);
