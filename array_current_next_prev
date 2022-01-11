@@ -1,0 +1,19 @@
+$birds = [
+  'kak' => 'crow',
+  'cil' => 'kite',
+  'tiya' => 'Parrot',
+  'bok' => 'Heron',
+  'badur' => 'bat',
+
+];
+foreach ($birds as $bangleName => $EnglishName) {
+  echo "$EnglishName and local Name is $bangleName" . "<br>";
+}
+echo current($birds) . "<br>";
+echo next($birds) . "<br>";
+echo current($birds) . "<br>";
+echo end($birds) . "<br>";
+echo prev($birds) . "<br>";
+echo reset($birds) . "<br>";
+unset($birds['bok']);
+print_r($birds);
