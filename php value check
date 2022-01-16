@@ -1,0 +1,18 @@
+<?php
+$a='';
+if(isset($a)){
+  echo "a has value" . "<br>";
+}else{
+  echo "a has no value" . "<br>";
+}
+if(empty($a)){
+  echo "a is empty" . "<br>";
+}else{
+  echo "a is not empty" . "<br>";
+}
+if (isset($a) && (is_numeric($a) || $a != '' )){
+  echo "a has value and it's not empty";
+}else{
+  echo "a has no value and It's empty";
+}
+?>
