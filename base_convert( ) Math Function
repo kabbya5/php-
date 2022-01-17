@@ -1,0 +1,7 @@
+//string base_convert($inpNumber, $fromBase, $desBase)
+//$inpNumber : It is the number to be converted.
+//$fromBase : It is the original base of the number.
+//$desBase : It is the base to which you want to convert.
+
+$x = rand(10e16,10e8);
+ echo base_convert($x,10,36);
