@@ -1,0 +1,36 @@
+  $vegetables = array(
+      "Ash Gourd" => "Chal Kumro",
+      "Bitter Gourd" => "karola",
+      "Broad Bens"  => "Sheem",
+      "Carrot"   => "Gajor",
+      "Lentil"  => " Dal",
+      "Okra" => " ghendi",
+    );
+    $numbers = array(4, 6, 2, 22, 11,1);
+    arsort($numbers);
+    print_r($numbers);
+    echo "</br>";
+    sort($numbers);
+    print_r($numbers);
+    echo "</br>";
+    sort($numbers, SORT_STRING);
+    print_r($numbers);
+    echo "</br>";
+    echo "<ul>";
+    foreach ($vegetables as $EnglisName => $BanglaName) {
+      echo "<li>" . $EnglisName ."  /  ".$BanglaName ."</li>";
+    }
+    echo "</ul>";
+    asort($vegetables,SORT_FLAG_CASE);
+    print_r($vegetables);
+    echo "<br>";
+    sort($vegetables);
+    print_r($vegetables);
+    echo "<br>";
+
+    rsort($vegetables);
+    print_r($vegetables);
+    echo "<br>";
+    ksort($vegetables);
+    print_r($vegetables);
+    echo "<br>";
