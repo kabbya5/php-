@@ -1,0 +1,18 @@
+$vegetables = array(
+      "Ash Gourd" => "Chal Kumro",
+      "Bitter Gourd" => "karola",
+      "Broad Bens"  => "Sheem",
+      "Carrot"   => "Gajor",
+      "Lentil"  => " Dal",
+      "Okra" => "ghendi",
+    );
+    $numbers = array(4, 6, "2", 22, 11,1);
+    if(in_array(6, $numbers)){
+      echo "6 is found";
+    }elseif(in_array(2, $numbers,true)){
+      echo "number 2 is found";
+    }
+    echo "<br>";
+    echo array_search(22,$numbers,true)."<br>";
+    echo array_search(" Dal",$vegetables). "<br>";
+    echo key_exists("Carrot", $vegetables);
