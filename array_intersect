@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+	$n1 = array(1,5,62,45,232,12,2,);
+    $n2 = array(1,45,23,21, 12);
+    $f1 = array("a" => "mango", "b" => "apple");
+    $f3 = array("f" => "jackfood", "g" => "apple", 			"h" => "banana");
+    
+    $common = array_intersect($n1,$n2);
+    $common2 = array_intersect($f1,$f3);
+    
+    print_r($common);
+    print_r($common2);
+    echo "<br>";
+    
+    $common3 = array_intersect_assoc($f1,$f3);
+    print_r($common3);
+    
+    $diff1 = array_diff($n1,$n2);
+    $diff2 = array_diff_assoc($f3,$f1);
+    
+    print_r($diff1);
+    print_r($diff2);
+?>
+
+</body>
+</html>
