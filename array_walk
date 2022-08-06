@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$numbers = array(1,2,3,4,5,6,7,8);
+function sqare($n){
+print("Square of $n is".($n*$n*$n));
+}
+array_walk($numbers,'sqare');
+?>
+
+</body>
+</html>
