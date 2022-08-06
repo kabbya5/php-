@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$numbers = array(1,2,3,4,5,6,7,8,9);
+function cube($n){
+print("Square of $n is".($n*$n*$n));
+}
+array_walk($numbers,'cube');
+
+print_r($numbers);
+echo "<br>";
+
+function sqare($n){
+return $n*$n*$n;
+}
+$newNumber = array_map('sqare', $numbers);
+print_r($newNumber);
+
+// array filter use array_filter
+echo "<br>";
+echo "odd Number Form Numbers";
+
+function odd($n){
+return $n%2 == 1;
+}
+$odd = array_filter($numbers,'odd');
+print_r($odd);
+//another example 
+
+echo " num";
+$num = array();
+for($i = 0; $i < 100; $i++){
+	$num[$i] = $i;
+}
+function event($n){
+	return $n%2 == 0;  
+}
+
+
+
+$newNum = array_filter($num,"event");
+print_r($newNum);
+foreach($nuwNum  as $value){
+echo " $value" . "<br>";
+}
+?>
+
+</body>
+</html>
