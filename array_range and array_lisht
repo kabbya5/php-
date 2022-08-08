@@ -1,0 +1,12 @@
+<?php
+	$color = array('red','blue','green');
+	
+	echo "$color[2] .\n";
+	
+	list($red,$blue,$green) = $color;
+	
+	echo "$red \n";
+	
+foreach(range(6 ,60, 6) as $namota){
+  echo "$namota \n";
+}
