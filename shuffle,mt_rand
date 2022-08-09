@@ -1,0 +1,12 @@
+<?php
+	$numbers = range(2, 40);
+	print_r ($numbers);
+	$count = count($numbers);
+	$random = mt_rand(0,$count-1);
+	echo $numbers[$random] ."\n";
+	
+	shuffle($numbers);
+	
+	print_r($numbers);
+	
+?>
