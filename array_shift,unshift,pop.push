@@ -9,7 +9,6 @@
 	  "Grapes" => "আঙ্গুর",
 	  "Pomegranate" => "ডালিম ",
 	  "Fig" => "ডুমুর",
-	  "Fig" => "ডুমুর",
 	);
 	$keys = array_keys($fruits);
 	$count = count($keys);
@@ -17,8 +16,22 @@
 	for($i=0;$i<$count;$i++){
 	  echo "English Name = " . $keys[$i] ." and Bangla Name = " . $fruits[$keys[$i]] . "\n";
 	}
-	  
-  $newFruits = array_shift
-	  
-
-?>
+	echo " Add Last Elemnent Using Arry_Push.\n";
+	$newFruits = array_push($fruits,array('mango3'=> "Mangom2")); // Addlast value of array.
+  print_r($fruits);
+  
+  // beautiful way to merge asscotive array is 
+  
+  $fruits_add = array(
+    "mango3" => "Mangom2",
+    );
+    
+  $newFruits = array_merge($fruits, $fruits_add); // Addlast value of array.
+  print_r( $newFruits);
+  
+	echo " Remove Last Elemnent Using Arry_pop .\n";
+	$newFruits = array_pop($fruits); // remove last value of array.
+  print_r($fruits);
+  echo "Remove First Elemnent Using Arry_shift .\n";
+  $newFruits = array_shift($fruits); // remove first value of array.
+  print_r($fruits);
