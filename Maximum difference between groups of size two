@@ -1,0 +1,22 @@
+<?php
+
+  function maxDif($arry,$n){
+    $min = $arry[0] + $arry[1];
+    $max = $arry[$n-1] + $arry[$n-2];
+    
+    $max_dif = abs ($max - $min);
+    
+    echo $max_dif;
+  }
+  
+  $array = array(6,7,1,11);
+  sort($array);
+  
+  print_r($array);
+  
+  $n = sizeof($array);
+  
+  maxDif($array,$n);
+  
+  
+?>
