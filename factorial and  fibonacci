@@ -1,0 +1,14 @@
+//factorila example 
+
+<?php
+	function factorial($n){
+	  $product = 1;
+	  while($n > 1){
+	    $product *= $n;
+	    $n--;
+	  }
+	  echo $product;
+	}
+	
+  factorial(4);
+?>
