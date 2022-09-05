@@ -1,0 +1,23 @@
+<?php
+	 $string = "php is good programing language";
+	 
+	 //strlen return the length of string for object we can use count(), or sizeof()
+
+  $length = strlen($string);
+	 
+	 echo  $length  . "\n";  // 31
+	 
+	 
+	 echo substr($string,3) . "\n";
+	 
+	 echo substr($string,0, 3) . "\n";
+	 
+	 echo substr($string,-$length,-8) . "\n";
+	 
+	 echo substr($string,$length-8,$length). "\n";
+	 
+	 $s = strpos($string,'good');
+	 echo $s . "\n";
+	 
+	 echo strrpos($string,'good'). "\n";
+?>
