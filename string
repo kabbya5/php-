@@ -8,16 +8,33 @@
 	 echo  $length  . "\n";  // 31
 	 
 	 
-	 echo substr($string,3) . "\n";
+	 //substr(string,start,length) 
 	 
-	 echo substr($string,0, 3) . "\n";
+	 echo substr($string,3) . "\n";  //is good programing language
 	 
-	 echo substr($string,-$length,-8) . "\n";
+	 echo substr($string,0, 3) . "\n"; // php
 	 
-	 echo substr($string,$length-8,$length). "\n";
+	 echo substr($string,-$length,-8) . "\n"; // php is good programing
 	 
-	 $s = strpos($string,'good');
+	 echo substr($string,$length-8,$length). "\n"; // language
+	 
+	 // strripos(string,find,start)
+	 
+	 $s = strpos($string,'good');  // 7
 	 echo $s . "\n";
 	 
-	 echo strrpos($string,'good'). "\n";
+	 echo strrpos($string,'g'). "\n"; // 29
+	 
+	 //str_split(string,length)
+	 
+	 print_r(str_split('Hi'));
+	 
+	 print_r(str_split($string,5)); // 0 => php i
+	 
+	 print_r(explode(' ',$string)); //  [0] => php
+	 
+	 
+	 
+	 
+
 ?>
