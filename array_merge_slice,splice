@@ -1,0 +1,37 @@
+<?php
+	$birds = array(
+	    "কাক" =>  " Crow",
+	    "ঘুঘু" =>   " Dove",
+	    "ঈগল " =>  "Eagle",
+	    "কোকিল" =>"Cuckoo",
+	    "চড়ুই" => "Sparrow",
+	    "চিল" => "Kite",
+	    "দোয়েল " => "Magpie Robin",
+	    "তোতাপাখি" => "Parrot",
+	    "টিয়াপাখি"=> "Parakeet",
+	    "বক"=> "Herron",
+	  );
+	  
+	  $newBird = array_slice($birds,0,4,true);
+	  $newBird2 = array_slice($birds,4,null,true);
+	  
+	  $newBirds = array_merge($newBird,$newBird2);
+	  
+	  print_r($newBird);
+	  print_r($newBird2);
+	  
+	  print_r($newBirds);
+	 
+	  // key should not same.
+	  print_r($newBird + $newBird2);
+	 
+	 $addbird = array(
+	    'পায়রা'=> ' Pigeon',
+	    "পেঁচা "=> "Owl",
+	    "বুলবুলি  "=>    "Nightingale ,"
+	   );
+	   
+	   $newBird3 = array_splice($birds,4,2,$addbird,);
+	   print_r($newBird3);
+	    print_r($birds);
+?>
