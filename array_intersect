@@ -1,29 +1,45 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
-	$n1 = array(1,5,62,45,232,12,2,);
-    $n2 = array(1,45,23,21, 12);
-    $f1 = array("a" => "mango", "b" => "apple");
-    $f3 = array("f" => "jackfood", "g" => "apple", 			"h" => "banana");
-    
-    $common = array_intersect($n1,$n2);
-    $common2 = array_intersect($f1,$f3);
-    
-    print_r($common);
-    print_r($common2);
-    echo "<br>";
-    
-    $common3 = array_intersect_assoc($f1,$f3);
-    print_r($common3);
-    
-    $diff1 = array_diff($n1,$n2);
-    $diff2 = array_diff_assoc($f3,$f1);
-    
-    print_r($diff1);
-    print_r($diff2);
+	$number1 = array(1,3,4,5,6,7,8,9,6);
+	$number2 = array(2,4,5,7,4,8);
+	
+	$number1Str = implode(',',$number1);
+	$number2Str = implode(',',$number2);
+	
+	echo "common element of $number1Str and $number2Str are \n";
+	
+	$common = array_intersect($number1,$number2);
+	print_r($common);
+	
+	echo "The different between of $number1Str and $number2Str are \n";
+	print_r(array_diff($number1,$number2));
+	
+	$fruites = array('a' => 'apple', 'b' => 'banana');
+	$fruites1 = array('c' => 'lemon', 'd' => 'apple','b' => 'banana');
+	
+	$fruitsStr = implode(',', $fruites);
+	$fruites1Str = implode(',',$fruites1);
+	
+	echo "comon fruites of $fruitsStr and $fruites1Str \n";
+	
+	$commonfruitses = array_intersect($fruites,$fruites1);
+	print_r($commonfruitses);
+	
+	echo "comon fruites of $fruitsStr  and $fruites1Str assoc \n";
+	$comonFruitesByKey = array_intersect_assoc($fruites,$fruites1);
+	print_r($comonFruitesByKey);
+	
+	echo "different between $fruitsStr  and $fruites1Str \n";
+	$diff = array_diff($fruites1,$fruites);
+	print_r($diff);
+	
+	echo "different between $fruitsStr  and $fruites1Str assoc \n";
+	$diffByKey = array_diff_assoc($fruites1,$fruites);
+	print_r($diffByKey);
+	
+	$nuwFruits = array_merge($fruites,$diffByKey);
+	print_r($nuwFruits);
+	
+	$newFruits2 = array_push($fruites,$diff);
+	
+	print_r($newFruits2);
 ?>
-
-</body>
-</html>
