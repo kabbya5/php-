@@ -1,0 +1,26 @@
+<?php
+	$number = array(1,2,3,4,5,6,7,4,44);
+	$nuber2 = array(4,5,3,2,56,75);
+	
+	print_r(array_intersect($number,$nuber2));
+	print_r(array_diff($number,$nuber2));
+	
+	function sqare($n){
+	  $square = $n*$n;
+	  echo "sqare of $n is  $square \n";
+	}
+	array_walk($number, 'sqare');
+	
+	function cube($n){
+	  return $n*$n*$n;
+	}
+	
+	$new = array_map('cube',$number);
+	print_r($new);
+	
+	function even($n){
+	  return $n%2 == 0;
+	}
+	$new = array_filter($number,'even');
+	print_r($new);
+?>
