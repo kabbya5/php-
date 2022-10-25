@@ -1,0 +1,30 @@
+ $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+ $number = '123456789';
+ $lengthChar = strlen($characters);
+ $lengthNum = strlen($number);
+ $randomString = '';
+
+ function generateRandomString($lenght=10){
+   randomChar();
+   $randChar = randomNum();
+   return $randChar;
+ }
+ function randomNum($length=4){
+   global $lengthNum,$number,$randomString,$lengthChar,$characters,$randomString;
+   
+   for($i=0;$i<4;$i++){
+     $randomString .= $number[rand(0,$lengthNum-1)];
+   }
+   $randomString .= $characters[rand(0,$lengthChar-1)];
+   return $randomString;
+ }
+ function randomChar($length=5){
+   global $lengthChar,$characters,$randomString;
+   for($i=0;$i<5;$i++){
+     $randomString .= $characters[rand(0, $lengthChar-1)];
+   }
+
+ }
+ 
+ echo generateRandomString();
+?>
